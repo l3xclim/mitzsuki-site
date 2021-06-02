@@ -82,23 +82,28 @@ const initialize = async () => {
     onboarding.startOnboarding()
   }
 
+  function toggleClass(elem, c) {
+    elem.className = "";
+    elem.classList.add(c);
+  }
+
   const updateButtons = () => {
     if (!isMetaMaskInstalled()) {
       console.log('metamask is not installed');
       redeemButton.innerText = 'Click here to install MetaMask!'
+      toggleClass(redeemButton, 'connect'); // or have a separate 'install' state
       redeemButton.onclick = onClickInstall
       redeemButton.disabled = false
     } else if (isMetaMaskConnected()) {
       console.log('metamask is installed and connected!');
-      redeemButton.innerText = 'Mint!!'
       redeemButton.onclick = mint
-      // redeemButton.disabled = true
+      toggleClass(redeemButton, 'redeem')
       if (onboarding) {
         onboarding.stopOnboarding()
       }
     } else {
       console.log('metamask is not connected');
-      redeemButton.innerText = 'Connect with Metamask'
+      toggleClass(redeemButton, 'connect');
       redeemButton.onclick = onClickConnect
       redeemButton.disabled = false
     }
