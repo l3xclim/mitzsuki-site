@@ -39,7 +39,7 @@ const forwarderOrigin = currentUrl.hostname === 'localhost'
   ? 'http://localhost:9010'
   : undefined
 
-const onboardButton = document.getElementById('connectButton')
+const redeemButton = document.getElementById('redeem-button')
 
 const isMetaMaskInstalled = () => {
   const { ethereum } = window
@@ -76,22 +76,31 @@ const initialize = async () => {
     console.log('yay');
   }
 
+  const onClickInstall = () => {
+    redeemButton.innerText = '...'
+    redeemButton.disabled = true
+    onboarding.startOnboarding()
+  }
+
   const updateButtons = () => {
     if (!isMetaMaskInstalled()) {
-      onboardButton.innerText = 'Click here to install MetaMask!'
-      onboardButton.onclick = onClickInstall
-      onboardButton.disabled = false
+      console.log('metamask is not installed');
+      redeemButton.innerText = 'Click here to install MetaMask!'
+      redeemButton.onclick = onClickInstall
+      redeemButton.disabled = false
     } else if (isMetaMaskConnected()) {
-      onboardButton.innerText = 'Mint'
-      onboardButton.onclick = mint
-      // onboardButton.disabled = true
+      console.log('metamask is installed and connected!');
+      redeemButton.innerText = 'Mint!!'
+      redeemButton.onclick = mint
+      // redeemButton.disabled = true
       if (onboarding) {
         onboarding.stopOnboarding()
       }
     } else {
-      onboardButton.innerText = 'Connect with Metamask'
-      onboardButton.onclick = onClickConnect
-      onboardButton.disabled = false
+      console.log('metamask is not connected');
+      redeemButton.innerText = 'Connect with Metamask'
+      redeemButton.onclick = onClickConnect
+      redeemButton.disabled = false
     }
   }
 
