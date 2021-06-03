@@ -899,14 +899,14 @@ const initialize = async () => {
 
   const mint = async () => {
     console.log('redeeming!');
-    redeemButton.disabled = true
+    toggleClass(redeemButton, 'busy')
     await contract.methods.redeem(accounts[0]).send({from: accounts[0]});
     toggleClass(redeemButton, 'finished');
     console.log('done!');
   }
 
   const onClickInstall = () => {
-    redeemButton.disabled = true
+    toggleClass(redeemButton, 'busy')
     onboarding.startOnboarding()
   }
 
@@ -922,7 +922,6 @@ const initialize = async () => {
       redeemButton.innerText = 'Click here to install MetaMask!'
       toggleClass(redeemButton, 'connect'); // or have a separate 'install' state
       redeemButton.onclick = onClickInstall
-      redeemButton.disabled = false
     } else if (isMetaMaskConnected()) {
       console.log('metamask is installed and connected!');
       loadContract();
@@ -935,7 +934,6 @@ const initialize = async () => {
       console.log('metamask is not connected');
       toggleClass(redeemButton, 'connect');
       redeemButton.onclick = onClickConnect
-      redeemButton.disabled = false
     }
   }
 

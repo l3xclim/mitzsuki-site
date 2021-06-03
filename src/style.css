@@ -140,7 +140,7 @@ body {
   text-align: right;
 }
 
-.container .secondary .col-2-2 #redeem-button {
+#redeem-button {
   display: block;
   width: 175px;
   height: 58px;
@@ -148,32 +148,30 @@ body {
   text-indent: -9999px;
 }
 
-.container .secondary .col-2-2 #redeem-button:hover {
-  background-repeat: no-repeat;
+#redeem-button.busy {
+  background: url(images/busy.png);
+  background-size: contain;
+  pointer-events: none;
+  cursor: default;
 }
 
-.container .secondary .col-2-2 #redeem-button.connect {
+#redeem-button.connect {
   background: url(images/connect-to-metamask.png);
   background-size: contain;
 }
 
-.container .secondary .col-2-2 #redeem-button.redeem {
+#redeem-button.redeem {
   background: url(images/mint-button.png);
   background-size: contain;
 }
 
-.container .secondary .col-2-2 #redeem-button.redeem:hover {
+#redeem-button.redeem:hover {
   background: url(images/mint-button-hovered.png);
   background-size: contain;
 }
 
-.container .secondary .col-2-2 #redeem-button.finished {
-  background: url(images/mint-button-hovered.png); /* TODO: add a finished state image */
-  background-size: contain;
-}
-
-.container .secondary .col-2-2 #redeem-button.working {
-  background: url(images/mint-button-hovered.png); /* TODO: add a working state image */
+#redeem-button.finished {
+  background: url(images/finished.png);
   background-size: contain;
 }
 
