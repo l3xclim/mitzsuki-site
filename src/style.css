@@ -157,11 +157,6 @@ body {
   background-size: contain;
 }
 
-.container .secondary .col-2-2 #redeem-button.connect:hover {
-  background: url(images/mint-button-hovered.png);
-  background-size: contain;
-}
-
 .container .secondary .col-2-2 #redeem-button.redeem {
   background: url(images/mint-button.png);
   background-size: contain;
@@ -169,6 +164,16 @@ body {
 
 .container .secondary .col-2-2 #redeem-button.redeem:hover {
   background: url(images/mint-button-hovered.png);
+  background-size: contain;
+}
+
+.container .secondary .col-2-2 #redeem-button.finished {
+  background: url(images/mint-button-hovered.png); /* TODO: add a finished state image */
+  background-size: contain;
+}
+
+.container .secondary .col-2-2 #redeem-button.working {
+  background: url(images/mint-button-hovered.png); /* TODO: add a working state image */
   background-size: contain;
 }
 
