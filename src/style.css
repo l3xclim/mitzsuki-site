@@ -144,15 +144,36 @@ body {
   display: block;
   width: 175px;
   height: 58px;
-  background: url(images/mint-button.png);
   background-repeat: no-repeat;
-  background-size: contain;
   text-indent: -9999px;
 }
 
 .container .secondary .col-2-2 #redeem-button:hover {
-  background: url(images/mint-button-hovered.png);
   background-repeat: no-repeat;
+}
+
+.container .secondary .col-2-2 #redeem-button.connect {
+  background: url(images/connect-to-metamask.png);
+  background-size: contain;
+}
+
+.container .secondary .col-2-2 #redeem-button.redeem {
+  background: url(images/mint-button.png);
+  background-size: contain;
+}
+
+.container .secondary .col-2-2 #redeem-button.redeem:hover {
+  background: url(images/mint-button-hovered.png);
+  background-size: contain;
+}
+
+.container .secondary .col-2-2 #redeem-button.finished {
+  background: url(images/mint-button-hovered.png); /* TODO: add a finished state image */
+  background-size: contain;
+}
+
+.container .secondary .col-2-2 #redeem-button.working {
+  background: url(images/mint-button-hovered.png); /* TODO: add a working state image */
   background-size: contain;
 }
 
