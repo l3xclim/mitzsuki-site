@@ -850,9 +850,6 @@ const abi = [
 ];
 
 const currentUrl = new URL(window.location.href)
-const forwarderOrigin = currentUrl.hostname === 'localhost'
-  ? 'http://localhost:9010'
-  : undefined
 
 const redeemButton = document.getElementById('redeem-button')
 
@@ -869,7 +866,7 @@ const initialize = async () => {
   let accounts
 
   try {
-    onboarding = new MetaMaskOnboarding({ forwarderOrigin })
+    onboarding = new MetaMaskOnboarding();
   } catch (error) {
     console.error(error)
   }
