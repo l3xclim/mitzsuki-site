@@ -189,6 +189,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/hiredily-name.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13786,
+		"inputAbbreviatedPath": "\/images\/hiredily-name.png",
+		"outputAbbreviatedPath": "\/images\/hiredily-name.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/hiredily-pic.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 106661,
+		"inputAbbreviatedPath": "\/images\/hiredily-pic.png",
+		"outputAbbreviatedPath": "\/images\/hiredily-pic.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -321,6 +343,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/swolfchan-name.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15664,
+		"inputAbbreviatedPath": "\/images\/swolfchan-name.png",
+		"outputAbbreviatedPath": "\/images\/swolfchan-name.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/swolfchan-pic.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 59485,
+		"inputAbbreviatedPath": "\/images\/swolfchan-pic.png",
+		"outputAbbreviatedPath": "\/images\/swolfchan-pic.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/swolfchan-title.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 61694,
+		"inputAbbreviatedPath": "\/images\/swolfchan-title.png",
+		"outputAbbreviatedPath": "\/images\/swolfchan-title.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/team-header.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -328,6 +383,17 @@
 		"initialSize": 32286,
 		"inputAbbreviatedPath": "\/images\/team-header.png",
 		"outputAbbreviatedPath": "\/images\/team-header.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/teds-name.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21531,
+		"inputAbbreviatedPath": "\/images\/teds-name.png",
+		"outputAbbreviatedPath": "\/images\/teds-name.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

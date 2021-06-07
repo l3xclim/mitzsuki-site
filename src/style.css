@@ -202,6 +202,16 @@ body {
   position: absolute;
 }
 
+.container .team .profile-photo {
+  position: absolute;
+  z-index: -1;
+  display: block;
+}
+
+.container .team .profile-name {
+  position: absolute;
+}
+
 .container .team .frame-1 {
   width: 151px;
   height: 171px;
@@ -209,6 +219,21 @@ body {
   top: 10px;
   background: url(images/frame-1.png) no-repeat;
   background-size: contain;
+}
+
+.container .team .frame-1 .profile-photo {
+  width: 136px;
+  height: 131px;
+  background: url(images/hiredily-pic.png) no-repeat;
+  background-size: contain;
+  top: 8px;
+  left: 7px;
+}
+
+.container .team .frame-1 .profile-name {
+  width: 93px;
+  bottom: 13px;
+  right: 17px;
 }
 
 .container .team .frame-2 {
@@ -229,6 +254,30 @@ body {
   background-size: contain;
 }
 
+.container .team .frame-3 .profile-photo {
+  width: 145px;
+  height: 142px;
+  background: url(images/swolfchan-pic.png) no-repeat;
+  background-size: contain;
+  top: 6px;
+  left: 6px;
+}
+
+.container .team .frame-3:hover .profile-photo {
+  width: 138px;
+  height: 151px;
+  background: url(images/swolfchan-title.png) no-repeat;
+  background-size: contain;
+  top: 8px;
+  left: 8px;
+}
+
+.container .team .frame-3 .profile-name {
+  width: 118px;
+  bottom: 11px;
+  right: 23px;
+}
+
 .container .team .frame-4 {
   width: 158px;
   height: 185px;
@@ -236,6 +285,12 @@ body {
   top: 140px;
   background: url(images/frame-4.png) no-repeat;
   background-size: contain;
+}
+
+.container .team .frame-4 .profile-name {
+  width: 126px;
+  bottom: 6px;
+  right: 6px;
 }
 
 .container .team .frame-5 {
