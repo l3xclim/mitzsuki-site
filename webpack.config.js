@@ -16,6 +16,7 @@ module.exports = {
     contentBase: DIST,
     port: 9012,
     writeToDisk: true,
+    public: 'dev01.ngrok.io'
   },
   plugins: [
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
