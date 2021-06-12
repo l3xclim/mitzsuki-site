@@ -150,7 +150,7 @@ body {
 }
 
 #redeem-button.busy {
-  background: url(images/busy.png);
+  background: url(images/busy.gif);
   background-size: contain;
   pointer-events: none;
   cursor: default;
