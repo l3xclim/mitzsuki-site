@@ -24,17 +24,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/busy.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 14572,
-		"inputAbbreviatedPath": "\/images\/busy.png",
-		"outputAbbreviatedPath": "\/images\/busy.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/claim-your-treasure.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -83,7 +72,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 17410,
+		"initialSize": 22817,
 		"inputAbbreviatedPath": "\/images\/finished.png",
 		"outputAbbreviatedPath": "\/images\/finished.png",
 		"outputPathIsOutsideProject": 0,
@@ -182,7 +171,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 35619,
+		"initialSize": 42647,
 		"inputAbbreviatedPath": "\/images\/hazkeys.png",
 		"outputAbbreviatedPath": "\/images\/hazkeys.png",
 		"outputPathIsOutsideProject": 0,
