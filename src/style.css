@@ -166,6 +166,15 @@ body {
   background-size: contain;
 }
 
+#redeem-button.cantredeem {
+  background: url(images/mint-button.png);
+  background-size: contain;
+  /* disabled */
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
+
 #redeem-button.redeem:hover {
   background: url(images/mint-button-hovered.png);
   background-size: contain;
@@ -174,6 +183,10 @@ body {
 #redeem-button.finished {
   background: url(images/finished.png);
   background-size: contain;
+  /* disabled */
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
 }
 
 .container .secondary .col-2-2 #button-caption {
