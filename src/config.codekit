@@ -178,6 +178,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/hazkeys.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35619,
+		"inputAbbreviatedPath": "\/images\/hazkeys.png",
+		"outputAbbreviatedPath": "\/images\/hazkeys.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/header-bar.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -215,7 +226,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 88901,
+		"initialSize": 142401,
 		"inputAbbreviatedPath": "\/images\/logo.png",
 		"outputAbbreviatedPath": "\/images\/logo.png",
 		"outputPathIsOutsideProject": 0,
@@ -295,6 +306,28 @@
 		"initialSize": 14122,
 		"inputAbbreviatedPath": "\/images\/remaining-count.png",
 		"outputAbbreviatedPath": "\/images\/remaining-count.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/sorry.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 76877,
+		"inputAbbreviatedPath": "\/images\/sorry.png",
+		"outputAbbreviatedPath": "\/images\/sorry.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/success.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 63273,
+		"inputAbbreviatedPath": "\/images\/success.png",
+		"outputAbbreviatedPath": "\/images\/success.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -439,6 +472,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/keyholders.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/keyholders.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/reset.css": {
 		"fileType": 16,

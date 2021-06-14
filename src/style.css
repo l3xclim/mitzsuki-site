@@ -97,7 +97,7 @@ body {
 
 .container .secondary .col-2 h3 {
   text-align: center;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .container .secondary .col-2 h3 img{
@@ -112,14 +112,19 @@ body {
   text-align: center;
   float: left;
   margin-left: 25px;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .container .secondary .col-2-2 {
   text-align: center;
   display: inline-block;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
+}
+
+.container .secondary .col-2-3 {
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 .container .secondary .col-2-1 #total-count {
@@ -187,6 +192,38 @@ body {
   opacity: 0.5;
   cursor: default;
   pointer-events: none;
+}
+
+#message {
+  display: block;
+  width: 334px;
+  height: 103px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#key-count {
+  font-size: 41px;
+  position: absolute;
+  top: 31px;
+  right: 77px;
+  font-family: 'Caveat', cursive;
+  color: #FFF;
+}
+
+#message.no-keys {
+  background: url(images/sorry.png);
+  background-size: contain;
+}
+
+#message.hazkeys {
+  background: url(images/hazkeys.png);
+  background-size: contain;
+}
+
+#message.success {
+  background: url(images/success.png);
+  background-size: contain;
 }
 
 .container .secondary .col-2-2 #button-caption {

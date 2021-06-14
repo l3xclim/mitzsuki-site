@@ -838,6 +838,8 @@ const currentUrl = new URL(window.location.href);
 
 const redeemButton = document.getElementById('redeem-button');
 const message = document.getElementById('message');
+const keyCount = document.getElementById('key-count');
+
 const remainingCount = document.getElementById('remaining-count');
 
 const isMetaMaskInstalled = () => {
@@ -888,7 +890,7 @@ const initialize = async () => {
     toggleClass(redeemButton, 'busy')
     await contract.methods.redeem(account).send({from: account});
     toggleClass(redeemButton, 'finished');
-    message.textContent = "Success!";
+    toggleClass(message,'success');
     refreshCounter();
   }
 
@@ -922,13 +924,13 @@ const initialize = async () => {
 
       if (!availableToRedeem || availableToRedeem == 0) {
         toggleClass(redeemButton, 'cantredeem');
-        message.textContent = "Sorry, we couldn't find any keys in your account."
+        toggleClass(message,'no-keys');
       } else {
-        message.textContent = `You have ${maybePluralize(availableToRedeem, 'key')}!`;
+        toggleClass(message,'hazkeys');
+        keyCount.textContent = `${availableToRedeem}`;
         redeemButton.onclick = mint
         toggleClass(redeemButton, 'redeem')
       }
-      
       if (onboarding) {
         onboarding.stopOnboarding()
       }
