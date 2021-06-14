@@ -13,3 +13,8 @@ yarn start
 Open http://localhost:9012/
 
 It should autoreload when you make a change.
+
+## Keyholders Script
+```
+./keyholders.sh
+```
