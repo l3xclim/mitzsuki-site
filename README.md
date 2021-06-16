@@ -14,7 +14,11 @@ Open http://localhost:9012/
 
 It should autoreload when you make a change.
 
-## Keyholders Script
+## Get all Contract Owners / Keyholders
 ```
-./keyholders.sh
+python get-owners.py
+```
+or 
+```
+python2 get-owners.py
 ```

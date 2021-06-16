@@ -14,54 +14,25 @@
   <h1>Hello Mitzsuki Key Holders</h1>
 
   <script>
-  window.addEventListener("load", function(){
-    var tokenId = "58657014090862667548655853218032649544374644375505803723305169486351928656372";
-    var assetContractAddress = "0x495f947276749ce646f68ac8c248420045cb7b5e";
-    var chain = "ETHEREUM";
-    var count = 100;
-    var cursor = "";
     var data = JSON.stringify({
-      query: `query ItemOwnersListQuery($archetype: ArchetypeInputType!, $count: Int, $cursor: String) {
-    archetype(archetype: $archetype) {
-      asset {
-        assetOwners(after: $cursor, first: $count) {
-          edges {
-            node {
-              quantity
-              owner {
-                address
-              }
-            }
-            cursor
-          }
-          pageInfo {
-            endCursor
-            hasNextPage
-          }
-        }
-      }
+      query: `{
+  wallet(address: "0x60fd35191ffa774e40934efb8ed34b2ec42da320") {
+    funds {
+      name
+      image
+      usdPrice
     }
-  }`,
-    variables: `{
-        "archetype": {
-        "assetContractAddress": "0x495f947276749ce646f68ac8c248420045cb7b5e",
-        "chain": "ETHEREUM",
-        "tokenId": "58657014090862667548655853218032649544374644375505803723305169486351928656372"
-      },
-      "count": 100,
-      "cursor": ""
-    }`
+  }
+}`
   });
 
   fetch('https://api.opensea.io/graphql/', {
     method: 'POST',
     headers: {
-      'Accept': 'application/json',
-      'Origin': 'altair://-'
+      'Accept': 'application/json'
     },
     body: data
   });
-    });
   </script>
 </body>
 </html>
