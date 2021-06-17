@@ -5,7 +5,7 @@ python3 -c '
 import sys, json
 obj=json.load(sys.stdin)
 for node in obj["data"]["archetype"]["asset"]["assetOwners"]["edges"]:
-	print("reserve[address(%s)] = %s;" %(node["node"]["owner"]["address"],node["node"]["quantity"],))
+	print("\t\treserve[address(%s)] = %s;" %(node["node"]["owner"]["address"],node["node"]["quantity"],))
 print(obj["data"]["archetype"]["asset"]["assetOwners"]["pageInfo"])
 '
 ## TODO: Instead of print out to console, save it to keyholders.txt
