@@ -14,11 +14,27 @@ Open http://localhost:9012/
 
 It should autoreload when you make a change.
 
-## Get all Contract Owners / Keyholders
+## Keyholders Script
+fetch the first 100 like this:
 ```
-python get-owners.py
+./keyholders.sh
 ```
-or 
+
+then copy the 'endCursor' value and run the script again:
+
 ```
-python2 get-owners.py
+./keyholders.sh YXJyYXljb25uZWN0aW9uOjk5
 ```
+
+run until you see `'hasNextPage': False`
+
+copy the output into the keyholders.txt
+
+(optional) count the number of lines in keyholders.txt, make sure it's the same as the number on OpenSea
+
+```
+wc -l keyholders.txt
+```
+
+then copy the keyholders into the smart contract.
+
