@@ -1,12 +1,13 @@
 {
-  "name": "metamask-simple-dapp",
+  "name": "mitzsuki-origin",
   "version": "1.0.0",
-  "description": "Building a simple dapp used in MetaMask e2e tests.",
+  "description": "Mitzsuki Key - Suki's Origin Drop",
   "scripts": {
     "deploy": "./deploy.sh",
     "lint": "eslint . --ext js,json",
     "lint:fix": "eslint . --fix --ext js,json",
     "serve": "static-server . --port 9011",
+    "build": "webpack --config=webpack.config.prod.js",
     "start": "webpack-dev-server",
     "test": "yarn lint"
   },

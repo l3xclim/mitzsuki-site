@@ -5,18 +5,12 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const DIST = path.resolve(__dirname, 'dist')
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
     path: DIST,
     publicPath: DIST,
-  },
-  devServer: {
-    contentBase: DIST,
-    port: 9012,
-    writeToDisk: true,
-    public: 'dev01.ngrok.io'
   },
   plugins: [
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
