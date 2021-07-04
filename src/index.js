@@ -5,7 +5,7 @@ import Web3 from 'web3';
 import { encrypt } from 'eth-sig-util'
 import MetaMaskOnboarding from '@metamask/onboarding'
 
-const contractAddress = '0x89384e062a59f16eb9fdbda9e858e62eae222b38';
+const contractAddress = '0x89384E062a59F16EB9fdbda9e858E62eAE222B38';
 
 const abi =
       [
