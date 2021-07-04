@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Mitzsuki Key - Suki's Origin Drop by swolfchan</title>
+  <meta name="description" content="Mitzsuki Key Suki's Origin Drop">
+  <meta name="author" content="swolfchan">
+
+</head>
+
+<body>
+  <h1>Hello Mitzsuki Key Holders</h1>
+  <ol id="ownerList"></ol>
+
+  <!-- <script>
+    var data = JSON.stringify({
+      query: `{
+  tokens(where: {identifier: "58657014090862667548655853218032649544374644375505803723305169486351928656372"}) {
+    balances(first: 999, orderBy: value, orderDirection: desc, where: { value_gt: "0"}) {
+      account {
+        id
+      }
+      value
+    }
+  }
+}
+`
+  });
+
+  fetch('https://api.thegraph.com/subgraphs/name/l3xcodes/eip1155', {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json'
+    },
+    body: data
+  }).then(r => r.json())
+  .then(data => console.log('data returned:', data));
+  </script> -->
+<script>
+  (async function () {
+    const data = JSON.stringify({
+      query: `{
+  tokens(where: {identifier: "58657014090862667548655853218032649544374644375505803723305169486351928656372"}) {
+    balances(first: 999, orderBy: value, orderDirection: desc, where: { value_gt: "0"}) {
+      account {
+        id
+      }
+      value
+    }
+  }
+}`,
+    });
+
+    const response = await fetch(
+      'https://api.thegraph.com/subgraphs/name/l3xcodes/eip1155',
+      {
+        method: 'post',
+        body: data,
+        headers: {
+      'Accept': 'application/json'
+        },
+      }
+    );
+
+    const ownershipData = await response.json();
+    const templateFn = (address, value) => `<li>${address} (${value})</li>`;
+    const ownerList = document.getElementById('ownerList');
+    ownershipData.data.tokens[0].balances.map((account) => {
+      ownerList.insertAdjacentHTML(
+        'beforeend',
+        templateFn(account.account.id, account.value)
+      );
+    });
+  })();
+</script>
+</body>
+</html>
+
+
